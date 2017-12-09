@@ -49,21 +49,21 @@ void init_variant_properties() {
 
     if (rf_version == "14") {
         /* Chinese */
-        property_set("ro.product.model", "ONE A2001");
-        property_set("ro.rf_version", "TDD_FDD_Ch_All");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ro.telephony.default_network", "20,20");
+        android::init::property_set("ro.product.model", "ONE A2001");
+        android::init::property_set("ro.rf_version", "TDD_FDD_Ch_All");
+        android::init::property_set("telephony.lteOnCdmaDevice", "1");
+        android::init::property_set("ro.telephony.default_network", "20,20");
     } else if (rf_version == "24") {
         /* Asia/Europe */
-        property_set("ro.product.model", "ONE A2003");
-        property_set("ro.rf_version", "TDD_FDD_Eu");
-        property_set("ro.telephony.default_network", "9,9");
+        android::init::property_set("ro.product.model", "ONE A2003");
+        android::init::property_set("ro.rf_version", "TDD_FDD_Eu");
+        android::init::property_set("ro.telephony.default_network", "9,9");
     } else if (rf_version == "34") {
         /* America */
-        property_set("ro.product.model", "ONE A2005");
-        property_set("ro.rf_version", "TDD_FDD_Am");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ro.telephony.default_network", "9,9");
+        android::init::property_set("ro.product.model", "ONE A2005");
+        android::init::property_set("ro.rf_version", "TDD_FDD_Am");
+        android::init::property_set("telephony.lteOnCdmaDevice", "1");
+        android::init::property_set("ro.telephony.default_network", "9,9");
     }
 }
 
